@@ -41,3 +41,11 @@ contract ImplementationContract {
         number = _num;
     }
 }
+
+contract ImplementationContractV2 {
+    uint256 public number;
+    
+    function setValue(uint256 _num) public {
+        number = _num + 2;
+    }
+}
