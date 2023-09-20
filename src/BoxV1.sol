@@ -26,15 +26,15 @@ contract BoxV1 is Initializable, UUPSUpgradeable, OwnableUpgradeable {
     
     }
 
-    function getNumber() view public returns(uint256) {
+    function getNumber() external view returns(uint256) {
         return number;
     }
 
-    function version() pure public returns(uint256) {
+    function version() external pure returns(uint256) {
         return 1;
     }
 
     function _authorizeUpgrade(address newImplementation) internal override {
-        // no checks in here cuz we want everyone to be able to authorizeUpgrade. Just implementing cuz it's required by the UUPS abstract contract
+        // no checks in here cuz we want everyone to be authorized to allow upgrade. Just implementing cuz it's required by the UUPS abstract contract
     }
 }
