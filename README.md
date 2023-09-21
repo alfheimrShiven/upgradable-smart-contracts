@@ -3,6 +3,8 @@
 ## About
 In this project, I demonstrate upgrading of a contract using the Universal Upgradable Proxy Standard (UUPS).
 
+*Notice: Publishing upgradeable smart contracts and especially if the upgrading authority is an indiviual entity is considered to be a bad practice as it introduces a centralisation factor, hence it's advice to restraint from it.*
+
 ## Reference Resources
 [Openzeppelin- Proxies](https://docs.openzeppelin.com/contracts/4.x/api/proxy)
 
